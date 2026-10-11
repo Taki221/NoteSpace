@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт на Django</title>
+    <link rel="stylesheet" href="{% static 'mainapp/style.css' %}">
+</head>
+<body>
+    <h1>Привет, {{ username }}!</h1>
+    <p>Это страница, загруженная из HTML-шаблона.</p>
+    <p>Добавить пост:</p>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Сохранить</button>
+    </form>
+    <br>
+
+    <h2>Список задач</h2>
+
+    <ul>
+    {% for task in tasks %}
+        <li>
+            <strong>{{ task.title }}</strong>: {{ task.description }}
+            <a href="{% url 'edit_task' task.pk %}">✏️ </a>
+            <a href="{% url 'delete_task' task.pk %}">❌</a>
+            <p class="add-date">Добавлено: {{ task.created_at|date:"d.m.Y H:i" }}</p>
+            <div class="light-divider"></div>
+            <p class="add-date">Изменено: {{ task.updated_at|date:"d.m.Y H:i" }}</p>
+            <br>
+        </li>
+    {% empty %}
+        <li>Задач пока нет!</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
