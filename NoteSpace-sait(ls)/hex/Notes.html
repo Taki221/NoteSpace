@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZAMETKI SUN</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <a href="index.html" class="text-dark text-decoration-none"
+            >ZAMETKI SUN</a
+          >
+          <button type="button" class="theme" aria-label="Сменить тему">
+            <img src="img/moon.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="notes-app">
+      <aside class="sidebar" id="notes-sidebar">
+        <div class="sidebar-top">
+          <a href="#" class="new-note">Новая заметка</a>
+          <nav class="sidebar-nav">
+            <a href="#" class="nav-item all-notes-nav active">
+              <img src="img/icon/notepad-text.svg" alt="" />
+              <span>Мои заметки</span>
+            </a>
+            <a href="#" class="nav-item favorites-nav">
+              <img src="img/icon/star.svg" alt="" />
+              <span>Избранное</span>
+            </a>
+            <a href="#" class="nav-item trash-nav">
+              <img src="img/icon/trash.svg" alt="" />
+              <span>Корзина</span>
+            </a>
+          </nav>
+        </div>
+        <div class="profile">
+          <div class="avatar">A</div>
+          <div class="profile-info">
+            <span>Averta4</span>
+            <small>averta4@mail.ru</small>
+          </div>
+          <button
+            type="button"
+            class="profile-more"
+            aria-label="Меню профиля"
+            aria-expanded="false"
+          >
+            ...
+          </button>
+          <div class="profile-menu hidden">
+            <a href="login.html" class="logout-button">
+              <img src="img/icon/undo-2.svg" alt="" />
+              <span>Выйти</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <button
+        type="button"
+        class="sidebar-toggle"
+        aria-label="Свернуть меню"
+        aria-controls="notes-sidebar"
+        aria-expanded="true"
+      >
+        <img src="img/icon/chevron-left.svg" class="arrow-close" alt="" />
+        <img src="img/icon/chevron-right.svg" class="arrow-open" alt="" />
+      </button>
+
+      <section class="content">
+        <div class="empty-state">
+          <img src="img/Empty.png" class="empty-icon" alt="" />
+          <h2 class="empty-title">У вас пока нет заметок</h2>
+          <p class="empty-description">
+            Создайте первую заметку,<br />чтобы начать работу
+          </p>
+          <a href="#" class="new-note">Новая заметка</a>
+        </div>
+        <div class="notes-list">
+          <h2 class="notes-list-title">Заметки</h2>
+        </div>
+        <div class="note-editor hidden">
+          <input
+            type="text"
+            placeholder="Без названия"
+            class="note-title"
+            aria-label="Название заметки"
+          />
+          <textarea
+            class="note-text"
+            placeholder="Начните писать..."
+            aria-label="Текст заметки"
+          ></textarea>
+          <div class="editor-actions">
+            <button
+              type="button"
+              class="editor-icon-button favorite-note"
+              aria-label="Добавить в избранное"
+              aria-pressed="false"
+              title="Избранное"
+            >
+              <img src="img/icon/star.svg" alt="" />
+            </button>
+            <button
+              type="button"
+              class="editor-icon-button delete-note"
+              aria-label="Переместить в корзину"
+              title="В корзину"
+            >
+              <img src="img/icon/trash.svg" alt="" />
+            </button>
+            <button type="button" class="restore-note hidden">
+              Восстановить
+            </button>
+            <button type="button" class="delete-forever hidden">
+              Удалить навсегда
+            </button>
+            <button type="button" class="save-note">Сохранить</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

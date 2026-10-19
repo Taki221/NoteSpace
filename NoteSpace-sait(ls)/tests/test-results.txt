@@ -1,0 +1,39 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.1, pytest-8.3.3, pluggy-1.6.0 -- C:\Users\KK\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\KK\Desktop\NoteSpace-sait(ls)
+plugins: anyio-4.15.1
+collecting ... collected 7 items
+
+tests/test_http_status.py::test_site_pages_return_success_status[hex/index.html] PASSED [ 14%]
+tests/test_http_status.py::test_site_pages_return_success_status[hex/login.html] PASSED [ 28%]
+tests/test_http_status.py::test_site_pages_return_success_status[hex/Notes.html] PASSED [ 42%]
+tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/index.html] PASSED [ 57%]
+tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/login.html] PASSED [ 71%]
+tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/Notes.html] PASSED [ 85%]
+tests/test_http_status.py::test_missing_page_returns_not_found_status PASSED [100%]
+
+============================== slowest durations ==============================
+0.51s teardown tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/index.html]
+0.51s teardown tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/Notes.html]
+0.51s teardown tests/test_http_status.py::test_site_pages_return_success_status[hex/Notes.html]
+0.51s teardown tests/test_http_status.py::test_missing_page_returns_not_found_status
+0.51s teardown tests/test_http_status.py::test_site_pages_return_success_status[hex/login.html]
+0.50s teardown tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/login.html]
+0.48s teardown tests/test_http_status.py::test_site_pages_return_success_status[hex/index.html]
+0.13s call     tests/test_http_status.py::test_site_pages_return_success_status[hex/index.html]
+0.01s setup    tests/test_http_status.py::test_site_pages_return_success_status[hex/index.html]
+0.00s call     tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/Notes.html]
+0.00s setup    tests/test_http_status.py::test_missing_page_returns_not_found_status
+0.00s call     tests/test_http_status.py::test_site_pages_return_success_status[hex/login.html]
+0.00s call     tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/index.html]
+0.00s call     tests/test_http_status.py::test_site_pages_return_success_status[hex/Notes.html]
+0.00s call     tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/login.html]
+0.00s call     tests/test_http_status.py::test_missing_page_returns_not_found_status
+0.00s setup    tests/test_http_status.py::test_site_pages_return_success_status[hex/Notes.html]
+0.00s setup    tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/index.html]
+0.00s setup    tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/Notes.html]
+0.00s setup    tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/login.html]
+0.00s setup    tests/test_http_status.py::test_site_pages_return_success_status[hex/login.html]
+============================== 7 passed in 3.69s ==============================
+
