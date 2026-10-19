@@ -14,26 +14,26 @@ tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/Notes.h
 tests/test_http_status.py::test_missing_page_returns_not_found_status PASSED [100%]
 
 ============================== slowest durations ==============================
-0.51s teardown tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/index.html]
-0.51s teardown tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/Notes.html]
-0.51s teardown tests/test_http_status.py::test_site_pages_return_success_status[hex/Notes.html]
-0.51s teardown tests/test_http_status.py::test_missing_page_returns_not_found_status
-0.51s teardown tests/test_http_status.py::test_site_pages_return_success_status[hex/login.html]
+0.50s teardown tests/test_http_status.py::test_missing_page_returns_not_found_status
+0.50s teardown tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/index.html]
+0.50s teardown tests/test_http_status.py::test_site_pages_return_success_status[hex/Notes.html]
 0.50s teardown tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/login.html]
-0.48s teardown tests/test_http_status.py::test_site_pages_return_success_status[hex/index.html]
-0.13s call     tests/test_http_status.py::test_site_pages_return_success_status[hex/index.html]
-0.01s setup    tests/test_http_status.py::test_site_pages_return_success_status[hex/index.html]
-0.00s call     tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/Notes.html]
-0.00s setup    tests/test_http_status.py::test_missing_page_returns_not_found_status
-0.00s call     tests/test_http_status.py::test_site_pages_return_success_status[hex/login.html]
+0.50s teardown tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/Notes.html]
+0.49s teardown tests/test_http_status.py::test_site_pages_return_success_status[hex/login.html]
+0.46s teardown tests/test_http_status.py::test_site_pages_return_success_status[hex/index.html]
+0.05s call     tests/test_http_status.py::test_site_pages_return_success_status[hex/index.html]
+0.01s call     tests/test_http_status.py::test_site_pages_return_success_status[hex/login.html]
+0.00s setup    tests/test_http_status.py::test_site_pages_return_success_status[hex/index.html]
 0.00s call     tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/index.html]
-0.00s call     tests/test_http_status.py::test_site_pages_return_success_status[hex/Notes.html]
 0.00s call     tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/login.html]
+0.00s call     tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/Notes.html]
+0.00s call     tests/test_http_status.py::test_site_pages_return_success_status[hex/Notes.html]
 0.00s call     tests/test_http_status.py::test_missing_page_returns_not_found_status
 0.00s setup    tests/test_http_status.py::test_site_pages_return_success_status[hex/Notes.html]
-0.00s setup    tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/index.html]
-0.00s setup    tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/Notes.html]
 0.00s setup    tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/login.html]
 0.00s setup    tests/test_http_status.py::test_site_pages_return_success_status[hex/login.html]
-============================== 7 passed in 3.69s ==============================
+0.00s setup    tests/test_http_status.py::test_missing_page_returns_not_found_status
+0.00s setup    tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/Notes.html]
+0.00s setup    tests/test_http_status.py::test_site_pages_return_success_status[hex/hex/index.html]
+============================== 7 passed in 3.54s ==============================
 

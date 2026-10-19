@@ -4,6 +4,7 @@ from pathlib import Path
 from threading import Thread
 
 import pytest
+import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
@@ -51,6 +52,18 @@ def http_server():
     server.shutdown()
     server.server_close()
     server_thread.join()
+
+
+# Проверяет статус HTTP-ответа и возвращает его для дальнейших проверок.
+@pytest.fixture
+def check_status():
+    def _check(response, expected=200):
+        assert response.status_code == expected, (
+            f"Ожидался статус {expected}, получен {response.status_code}"
+        )
+        return response
+
+    return _check
 
 
 #для запуск
