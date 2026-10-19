@@ -1,0 +1,171 @@
+body.dark-mode {
+  background: #0f141b;
+  color: #f5f7fb;
+}
+body.dark-mode header {
+  background: #0f141b;
+  border-bottom-color: #2a3340;
+}
+body.dark-mode header a,
+body.dark-mode header a.text-dark {
+  color: #f5f7fb !important;
+}
+body.dark-mode .theme {
+  background: #242b36;
+  border-color: #343c49;
+}
+body.dark-mode .theme:hover {
+  background: #303a49;
+}
+body.dark-mode .hero {
+  color: #f5f7fb;
+}
+body.dark-mode .hero p {
+  color: #a7afbf;
+}
+body.dark-mode .brdn {
+  background: #4d65b5;
+  border-color: #4d65b5;
+  color: #ffffff;
+}
+body.dark-mode .brdn:hover {
+  background: #4158a5;
+  color: #ffffff;
+}
+body.dark-mode .sidebar {
+  background: #11161e;
+  border-right-color: #2a3340;
+}
+body.dark-mode .nav-item {
+  color: #a7afbf;
+}
+body.dark-mode .nav-item:hover {
+  background: #1e2530;
+  color: #f5f7fb;
+}
+body.dark-mode .nav-item.active {
+  background: #1e2a4a;
+  color: #f5f7fb;
+}
+body.dark-mode .nav-item img,
+body.dark-mode .editor-icon-button img,
+body.dark-mode .sidebar-toggle img {
+  filter: invert(1);
+}
+body.dark-mode .profile-info span {
+  color: #f5f7fb;
+}
+body.dark-mode .profile-info small {
+  color: #8f98aa;
+}
+body.dark-mode .profile-more {
+  color: #a7afbf;
+}
+body.dark-mode .profile-menu {
+  background: #1e2530;
+  border-color: #343c49;
+}
+body.dark-mode .logout-button {
+  color: #ff7777;
+}
+body.dark-mode .logout-button:hover {
+  background: #38262a;
+  color: #ff9999;
+}
+body.dark-mode .logout-button img {
+  filter: none;
+}
+body.dark-mode .content {
+  background: #0f141b;
+}
+body.dark-mode .notes-list {
+  background: #161c25;
+  border-right-color: #2a3340;
+}
+body.dark-mode .notes-list-title {
+  color: #f5f7fb;
+}
+body.dark-mode .note-card {
+  background: #1e2530;
+  border-color: #343c49;
+  color: #e8ecf3;
+}
+body.dark-mode .note-card:hover {
+  background: #27324a;
+  border-color: #6c83ff;
+}
+body.dark-mode .note-card.is-selected {
+  background: #202b4a;
+  border-color: #6c83ff;
+}
+body.dark-mode .empty-state h2 {
+  color: #f5f7fb;
+}
+body.dark-mode .empty-state p {
+  color: #a7afbf;
+}
+body.dark-mode .note-title {
+  color: #f5f7fb;
+}
+body.dark-mode .note-title::placeholder {
+  color: #8f98aa;
+}
+body.dark-mode .note-text {
+  background: #151b24;
+  border-color: #2a3340;
+  color: #e8ecf3;
+}
+body.dark-mode .note-text::placeholder {
+  color: #8f98aa;
+}
+body.dark-mode .note-text:focus {
+  border-color: #6c83ff;
+}
+body.dark-mode .editor-icon-button {
+  background: #1e2530;
+  border-color: #343c49;
+}
+body.dark-mode .editor-icon-button:hover {
+  background: #293348;
+}
+body.dark-mode .favorite-note.is-active {
+  background: #202b4a;
+  border-color: #6c83ff;
+}
+body.dark-mode .sidebar-toggle {
+  background: #1e2530;
+  border-color: #2a3340;
+}
+body.dark-mode .sidebar-toggle:hover {
+  background: #293348;
+}
+body.dark-mode .login-page {
+  background: #0f141b;
+}
+body.dark-mode .login-card {
+  background: #161c25;
+  border-color: #2a3340;
+}
+body.dark-mode .login-heading h1 {
+  color: #f5f7fb;
+}
+body.dark-mode .login-heading p {
+  color: #a7afbf;
+}
+body.dark-mode .login-field label {
+  color: #e8ecf3;
+}
+body.dark-mode .login-field input {
+  background: #1e2530;
+  border-color: #343c49;
+  color: #f5f7fb;
+}
+body.dark-mode .login-field input::placeholder {
+  color: #8f98aa;
+}
+body.dark-mode .login-field input:focus {
+  border-color: #6c83ff;
+}
+body.dark-mode .login-hint {
+  color: #8f98aa;
+}
