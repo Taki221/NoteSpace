@@ -37,4 +37,10 @@ Set-Content -Path $resultsPath -Value $report -Encoding UTF8
 
 exit $pytestExitCode
 
-# Запуск: .\tests\run_tests.ps1
+
+
+# Первый запуск из папки NoteSpace-sait(ls): установи зависимости:
+# py -m pip install pytest requests selenium
+
+# Запуск фронтенд-тестов из папки NoteSpace-sait(ls):
+# .\tests\run_tests.ps1
