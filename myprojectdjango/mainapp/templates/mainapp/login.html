@@ -1,0 +1,77 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вход — ZAMETKI SUN</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'mainapp/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'mainapp/css/dark.css' %}" />
+    <link rel="stylesheet" href="{% static 'mainapp/css/mobile.css' %}" />
+    
+    <script src="{% static 'mainapp/js/script.js' %}" defer></script>
+    <script src="{% static 'mainapp/js/dark.js' %}" defer></script>
+    <script src="{% static 'mainapp/js/login.js' %}" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <a href="{% url 'index' %}" class="text-dark text-decoration-none"
+            >ZAMETKI SUN</a
+          >
+          <button type="button" class="theme" aria-label="Сменить тему" 
+              data-sun="{% static 'mainapp/img/sun.svg' %}" 
+              data-moon="{% static 'mainapp/img/moon.svg' %}">
+              <img src="{% static 'mainapp/img/moon.svg' %}" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="login-page">
+      <div class="login-card">
+        <div class="login-heading">
+          <h1>Вход в аккаунт</h1>
+          <p>Введите логин и пароль для входа</p>
+        </div>
+        <form class="login-form" method="post" id="loginForm">
+          <div class="login-field">
+            <label for="username">Логин</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Введите логин"
+              autocomplete="username"
+              required
+            />
+          </div>
+          <div class="login-field">
+            <label for="password">Пароль</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Введите пароль"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+          <button type="submit" class="login-button">Войти</button>
+        </form>
+        <p class="login-hint">Только для зарегистрированных пользователей</p><br/>
+        <div class="testing">
+          <p class="login-hint-test">ТЕСТОВЫЕ АККАУНТЫ:</p>
+          <p class="login-hint-test">celen | 123</p>
+          <p class="login-hint-test">Steve | catadd1cted</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
